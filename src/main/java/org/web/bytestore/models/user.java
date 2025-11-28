@@ -1,6 +1,7 @@
 package org.web.bytestore.models;
 
 import jakarta.persistence.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.Objects;
 
@@ -9,18 +10,19 @@ import java.util.Objects;
 public class user {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", unique = true)
+    @Column(name = "id",  nullable = false)
     private Long id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "nome", length = 100,  nullable = false)
     private String nome;
-    @Column(name = "birth",nullable = false)
+    @Column(name = "nascimento", columnDefinition = "DATE",  nullable = false)
     private String nascimento;
-
-    @Column(name = "email", nullable = false, unique = true)
+    @Column(name = "email", length = 150,  nullable = false)
     private String email;
-    @Column(name = "senha", nullable = false)
+    @Column(name = "senha", length = 50,  nullable = false)
     private String senha;
+    @Column(name = "cep", length = 60,  nullable = false)
+    private String cep;
 
 
     public user(Long id, String nome, String nascimento, String email, String senha) {
@@ -32,10 +34,7 @@ public class user {
     }
 
     public user() {
-
     }
-
-
     public Long getId() {
         return id;
     }
@@ -76,16 +75,11 @@ public class user {
         this.senha = senha;
     }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        user user = (user) o;
-        return Objects.equals(id, user.id) && Objects.equals(nome, user.nome) && Objects.equals(nascimento, user.nascimento) && Objects.equals(email, user.email) && Objects.equals(senha, user.senha);
+    public String getCep() {
+        return cep;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, nome, nascimento, email, senha);
+    public void setCep(String cep) {
+        this.cep = cep;
     }
 }
