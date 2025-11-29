@@ -1,0 +1,117 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(img/Background.svg);
+    background-repeat: no-repeat;
+}
+span{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#txtNascimento{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ap{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+
+    font-size: 25px;
+    text-align: center;
+    
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: white;
+    
+}
+         
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container input{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 5px;
+
+    height: 50px;
+    width: 400px;
+    
+    color: white;
+    background-color: #171515;
+    border-radius: 10px;
+}
+.container h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;   
+}
+
+.viewButton{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.viewButton input{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 2px;
+    border-radius: 0px;
+}
+
+.viewButton button{
+    border: none;
+    cursor: pointer;
+}
+
+.btnLogin{
+    display: flex;
+    flex-direction: row;
+}
+.btnLogin span{
+    margin-top: 0px;
+    font-size: 15px;
+}
+.btnLogin a{
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+#btnSubmit{
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 50%;
+    cursor: pointer;
+}

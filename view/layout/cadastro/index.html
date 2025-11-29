@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Importação da Font text -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Importação da Font text-->
+
+<!-- Importação dos Icones t-->
+    <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/transformations.min.css' rel='stylesheet'>
+<!-- Importação dos Icones-->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="ap">
+        <h1>ByteStore</h1>
+    </div>
+
+
+    <div class="container">
+        <form action="" id="formCadastro">
+            <h2>Cadastro</h2>
+        
+            <span>Nome: </span>
+            <input type="text" name="nome" id="nome" placeholder="Cleiton">
+            
+            <span id="txtNascimento">Nascimento: </span>
+            <input type="date" name="nascimento" id="nascimento">
+
+            <span>E-mail: </span>
+            <input type="email" name="email" id="email" placeholder="Cleiton@gmail.com">
+            <span>Cep: </span> 
+            <input type="text" name="cep" id="cep" placeholder="13254-780">
+            
+            <span>Senha: </span>
+            <div class="viewButton">
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <button type="button" onclick="viewSenha()"><i class='bx bx-eye-slash bx-md' id="meuIcon"></i></button>
+            </div>
+            <div class="btnLogin">
+                <span>Você já tem um login?</span>
+                <span><a href="/view/layout/login/index.html">Clique Aqui!</a></span>
+            </div>
+            
+            <!-- <i class='bx  bx-eye-alt bx-md'></i> = Olho aberto -->
+            <!-- <i class='bx  bx-eye-slash bx-md'></i> = Olho fechado -->
+
+
+            <button type="submit" id="btnSubmit">cadastrar</button>
+        </form>
+
+        <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>
