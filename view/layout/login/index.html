@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Importação da FontsGoogle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!-- Importação da FontsGoogle -->
+
+<!-- Importação dos Icons -->
     <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/transformations.min.css' rel='stylesheet'>
+<!-- Importação dos Icons -->
+
     <link rel="stylesheet" href="style.css">
-    <title>tst</title>
+    <title>Login</title>
 </head>
 <body>
 
-    <div class="container">
-        <form action="" id="formLogin">
-
-            <h1><i class='bx-lg bx-user-circle'></i> </h1>
-            <div class="divEmail">
-                <h3>Email</h3>
-                <input type="text" placeholder="ex: conta@gmail.com" id="email">
-            </div>
-
-            <div class="divSenha">
-                <h3>senha</h3>
-                <input type="password" placeholder="password" id="password">
-            </div>
-            
-    
-            <button class="logar">Logar</button>
-            <!--Esse Button e para teste, Essa criação e para ver a senha-->
-            <button type="button" onclick="visualSenha()" class="logar">View Password</button> 
-            
-            
-            
-            <div>
-                <span>Primeiro Acesso?</span>
-                <span><a href="">Clique Aqui!</a></span>
-            </div>
-            
-        </form>
+    <div class="nameTitle">
+        <h1>ByteStore</h1>
     </div>
 
-    <script src="script.js"></script>
+    <div class="container">
+        <form action="" id="formLogin">
+            <h2>Login</h2>
+            
+            <span>Nome: </span>
+            <input type="text" name="nome" id="nome" placeholder="Cleiton">
+            
+            <span>Email: </span>
+            <input type="email" name="email" id="email" placeholder="Cleiton@gmail.com">
+
+            <span>Senha: </span>
+            <div class="viewSenha">
+                <input type="password" name="senha" id="senha" placeholder="senha">
+                <button type="button" class="btnView" onclick="viewSenha()"><i class='bxr  bx-eye-slash bx-md' id="meuIcon"></i> </button>
+                <!-- <i class='bxr  bx-eye-alt'></i>  -->
+            </div>
+            
+            <button class="btnLogar">Logar</button>
+        </form>
+        <div id="acessoCadastro">
+            <span>não tem um Login?</span>
+            <span><a href="">Clique Aqui!</a></span>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

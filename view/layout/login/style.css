@@ -1,96 +1,104 @@
 *{
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    
-    color: white;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
 }
-
-.meuFundo{
-    background-image: url(img/Design\ sem\ nome.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 903px;
-}
-
 body{
-    background-color: black;
+    background-image: url(img/background.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    width: 400px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
 }
 
 .container{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(29, 29, 31);
-
-    padding-top: 50px;
-    border: 5px solid white;
-    border-radius: 0px 100px;
-}
-
-h1{
-    font-size: 150px;
-    position: absolute;    
-    top: 4%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px ;
+    border-radius: 10px;
 }
-
-h3{
-    color: white;
-    text-align: left;
-    margin-left: 10px;
-}
-
 
 form{
     display: flex;
     flex-direction: column;
-    margin: 20px;
 }
-
-input{
-    background-color: rgba(240, 248, 255, 0);
-    border: 2px solid white;
-    border-radius: 100px;
-    height: 25px;
-    width: auto;
-    margin-bottom: 10px;
-    font-size: 25px;
-    padding: 10px;
-
-    color: white;
-}
-
-.logar{
-    border: 2px solid white;
-    border-radius: 10px;
-    
-
-    color: white;
-    background-color: rgb(75, 193, 233);
-
-    font-size: 30px;
-    font-weight: bold;
-
-    width:300px;
-    padding: 5px;
+form h2{
+    font-size: 50px;
     text-align: center;
-    cursor: pointer;
-
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 span{
-    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
 }
-a{
-    margin-left: 100px;
+input{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    width: 400px;
+    text-align: left;
 }
 
+.viewSenha{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.viewSenha button{
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+     border-radius: 5px;
+     position: absolute;
+     left: 89%;
+     transform: translate(-50%);
+     cursor: pointer;
+     background-color: white;
+     border: none;
+}
 
+#acessoCadastro{
+ margin-top: 20px;  
+ margin-bottom: 5px; 
+}
+#acessoCadastro span{
+    font-size: 15px;
+    font-weight: bold;
+}
+#acessoCadastro a{
+    color: white;
+    margin-left: 180px;
+}
+
+.btnLogar{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+    font-weight: bold;
+    width: 40%;
+    cursor: pointer;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+}

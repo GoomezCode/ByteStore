@@ -1,14 +1,28 @@
-/*Captura todos os dados do form*/
-const Iemail = document.getElementById("email");
-const Isenha = document.getElementById("password");
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const senha = document.getElementById("senha");
 const form = document.getElementById("formLogin");
 
+const icon = document.getElementById("meuIcon");
 
-/*Adiciona a Função para limpar os campos*/
-function clear(){
-    Iemail.value = "";
-    Isenha.value = "";
+function viewSenha(){
+    console.log("Chegou a aqui")
+
+    if(icon.classList.contains("bx-eye-slash")){
+        icon.classList.remove("bx-eye-slash")
+        icon.classList.add("bx-eye-alt")
+    }else{
+        icon.classList.remove("bx-eye-alt")
+        icon.classList.add("bx-eye-slash")
+    }
+
+    if(senha.type == "password"){
+        senha.type = "text"
+    }else{
+        senha.type = "password"
+    }
 }
+
 
 // Esse e o Methodo para a criação de um Usuário no banco de dados
 function cadastrar(){
@@ -17,47 +31,14 @@ function cadastrar(){
             'Accept':'application/json',
             'Content-Type': 'application/json'
         },
-        method: "POST",
-        body: JSON.stringify({
-            "nome": "Teste",
-            "nascimento": "2020-10-12",
-            "email": Iemail.value,
-            "senha": Isenha.value,
-            "cep": "789432743"
-        })
+        method: "GET"
     })
     .then(function(res) { console.log(res)})
     .catch(function (res) {console.log(res)})
 }
 
-
-
-/*Essa e a ação dps que eu faço uma ação com o Button do form*/
-/*Tudo que for colocado dentro sera acionado dps da ação*/
-form.addEventListener('submit', function(event){
+form.addEventListener("submit", function(event){
     event.preventDefault();
-    
-    
 
-    if(Iemail.value == " " && Isenha == " "){
-        console.log("Erro 404")
-    }else{
-        cadastrar();
-        clear();
-    }
+    cadastrar()
 })
-
-
-
-/*Crie um button no html com o " onclick="visualSenha()" "
-    ai ja vai esta funcionando */
-function visualSenha(){
-    console.log("chegou aqui")
-
-    if(Isenha.type == "password"){
-        Isenha.type = "text";
-    }else{
-        Isenha.type = "password";
-    }
-}
-    
