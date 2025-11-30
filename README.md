@@ -1,6 +1,6 @@
-#  ByteStore
->
-> ---
+>---
+> **ByteStore**
+> --- 
 > **Descrição:**
 >Eae como vai?, Esse e o **Primeiro** dois grandes projetos que estamos desenvolvendo, nos estamos desenvolvendo um **WEB E-Commerce** Chamado **ByteStore**  ela e voltada nos produtos de tecnologia, Essa web ainda está em desenvolvimento então ela não está possível para ser acessada, mas creio que dentro de 1 mês ela já estará no ar como uma **prévia**.
 >
