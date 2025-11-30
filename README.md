@@ -12,7 +12,7 @@
 > Criamos apenas dois layouts **Login** e **Cadastro**, apenas o layout de cadastro que está funcional em relação em adicionar usuarios em nosso DataBases, deixarei algumas representação de nossos layouts.
 > 
 > Login | Cadastro
-> :-- | :--:
+> :--: | :--:
 > <img src="/view/layout/login/img/pngLogin.png"> | <img src="/view/layout/cadastro/img/pngCadastro.png">
 >
 > ---
