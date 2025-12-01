@@ -18,36 +18,51 @@
     <title>Login</title>
 </head>
 <body>
+    
+    <main>    
 
-    <div class="nameTitle">
-        <h1>ByteStore</h1>
-    </div>
-
-    <div class="container">
-        <form action="" id="formLogin">
-            <h2>Login</h2>
-            
-            <span>Nome: </span>
-            <input type="text" name="nome" id="nome" placeholder="Cleiton">
-            
-            <span>Email: </span>
-            <input type="email" name="email" id="email" placeholder="Cleiton@gmail.com">
-
-            <span>Senha: </span>
-            <div class="viewSenha">
-                <input type="password" name="senha" id="senha" placeholder="senha">
-                <button type="button" class="btnView" onclick="viewSenha()"><i class='bxr  bx-eye-slash bx-md' id="meuIcon"></i> </button>
-                <!-- <i class='bxr  bx-eye-alt'></i>  -->
-            </div>
-            
-            <button class="btnLogar">Logar</button>
-        </form>
-        <div id="acessoCadastro">
-            <span>não tem um Login?</span>
-            <span><a href="">Clique Aqui!</a></span>
+        <div class="nameTitle">
+            <h1>ByteStore</h1>
         </div>
 
-        <script src="script.js"></script>
-    </div>
+        <form action="" id="formLogin">
+
+
+            <h2>Login</h2>
+            
+            <div class="boxInput">
+                <span>Nome: </span>
+                <input type="text" name="nome" id="nome" placeholder="Cleiton">
+            </div>
+            
+            
+            <div class="boxInput">
+                <span>Email: </span>
+                <input type="email" name="email" id="email" placeholder="Cleiton@gmail.com">
+            </div>
+            
+
+            <div class="boxInput">
+                <span>Senha: </span>
+                <div class="viewSenha">
+                    <input type="password" name="senha" id="senha" placeholder="senha">
+                    <button type="button" class="btnView" onclick="viewSenha()"><i class='bxr  bx-eye-slash bx-md' id="meuIcon"></i> </button>
+                    <!-- <i class='bxr  bx-eye-alt'></i>  -->
+                </div>
+            </div>
+            
+            
+            <button class="btnLogar">Logar</button>
+
+            <div id="acessoCadastro">
+                <span>não tem um Login?</span>
+                <span><a href="">Clique Aqui!</a></span>
+            </div>
+        </form>
+
+        
+
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

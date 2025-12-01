@@ -10,31 +10,43 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-h1{
-    text-align: center;
-    font-size: 50px;
-    width: 400px;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 85vh;
+}
+
+.nameTitle{
+    text-align: center;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+
+    
+}
+.nameTitle h1{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
-}
-
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
-    padding: 0px 20px 0px 20px ;
-    border-radius: 10px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 450px;
+    padding: 0px 20px 0px 20px;
+
     display: flex;
     flex-direction: column;
 }
@@ -42,22 +54,31 @@ form h2{
     font-size: 50px;
     text-align: center;
 }
-span{
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
+
+.boxInput{
+    display: flex;
+    flex-direction: column;
 }
-input{
+.boxInput input{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 5px;
+
+    width: 400px;
+    height: 40px;
+
     padding-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-size: 25px;
     font-weight: bold;
-    height: 40px;
-    width: 400px;
+}
+.boxInput span{
+    font-size: 25px;
+    font-weight: bold;
+    
     text-align: left;
+    margin-left: 60px;
 }
 
 .viewSenha{
@@ -65,6 +86,19 @@ input{
     display: flex;
     flex-direction: row;
 }
+.viewSenha input{
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+}
+
 .viewSenha button{
      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
      border-radius: 5px;
