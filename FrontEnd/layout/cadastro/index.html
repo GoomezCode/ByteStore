@@ -24,41 +24,49 @@
         <h1>ByteStore</h1>
     </div>
 
-
-    <div class="container">
-        <form action="" id="formCadastro">
+    <main>
+        <form action="">
             <h2>Cadastro</h2>
-        
-            <span>Nome: </span>
-            <input type="text" name="nome" id="nome" placeholder="Cleiton">
             
-            <span id="txtNascimento">Nascimento: </span>
-            <input type="date" name="nascimento" id="nascimento">
-
-            <span>E-mail: </span>
-            <input type="email" name="email" id="email" placeholder="Cleiton@gmail.com">
-            <span>Cep: </span> 
-            <input type="text" name="cep" id="cep" placeholder="13254-780">
-            
-            <span>Senha: </span>
-            <div class="viewButton">
-            <input type="password" name="senha" id="senha" placeholder="Senha">
-            <button type="button" onclick="viewSenha()"><i class='bx bx-eye-slash bx-md' id="meuIcon"></i></button>
+            <div class="boxInput">
+                <span>Nome: </span>
+                <input type="text" name="nome" id="nome" placeholder="Cleiton">
             </div>
+            
+            <div class="boxInput">
+                <span id="txtNascimento">Nascimento: </span>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+
+            <div class="boxInput">
+                <span>E-mail: </span>
+                <input type="email" name="email" id="email" placeholder="Cleiton@gmail.com">
+            </div>
+
+            <div class="boxInput">
+                <span>Cep: </span> 
+                <input type="text" name="cep" id="cep" placeholder="13254-780">
+            </div>
+
+            <div class="boxInput">
+                <span>Senha: </span>
+                <div class="viewButton">
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <button type="button" onclick="viewSenha()"><i class='bx bx-eye-slash bx-md' id="meuIcon"></i></button>
+                </div>
+            </div>
+
             <div class="btnLogin">
                 <span>Você já tem um login?</span>
                 <span><a href="/view/layout/login/index.html">Clique Aqui!</a></span>
             </div>
-            
-            <!-- <i class='bx  bx-eye-alt bx-md'></i> = Olho aberto -->
-            <!-- <i class='bx  bx-eye-slash bx-md'></i> = Olho fechado -->
-
 
             <button type="submit" id="btnSubmit">cadastrar</button>
         </form>
+    </main>
 
-        <script src="script.js"></script>
-    </div>
-    
+
+
+    <script src="script.js"></script>
 </body>
 </html>
