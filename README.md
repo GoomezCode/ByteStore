@@ -15,7 +15,7 @@
 >
 > Login | Cadastro  
 > :--: | :--:  
-> <img src="/view/layout/login/img/pngLogin.png"> | <img src="/view/layout/cadastro/img/pngCadastro.png">  
+> <img src="/FrontEnd/layout/login/img/pngLogin.png"> | <img src="/FrontEnd/layout/cadastro/img/pngCadastro.png">  
 >  
 > ---  
 >**Design Arquitetura do Projeto:**
